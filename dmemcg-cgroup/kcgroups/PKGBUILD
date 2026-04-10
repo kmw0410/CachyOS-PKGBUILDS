@@ -6,13 +6,12 @@ _tag=dmemcg-experimental
 _kcgroups_commit=d106f1c8f44c1f231a9050b2bf82a34bb7d5db32
 _booster_commit=386ccfe529dac54fca51e24aec4b880a31afe836
 pkgver=0.0.${_tag//-/.}
-pkgrel=1
+pkgrel=3
 pkgdesc="KDE library to manipulate cgroups (and boost foreground apps)"
 arch=('x86_64')
 url="https://invent.kde.org/libraries/kcgroups.git"
 license=('LGPL-2.1-or-later')
 makedepends=('qt6-base' 'plasma-workspace' 'kwindowsystem' 'kconfig' 'kdbusaddons' 'cmake' 'extra-cmake-modules' 'git')
-options=()
 source=("kcgroups::git+https://github.com/pixelcluster/kcgroups.git#commit=${_kcgroups_commit}"
 	"plasma-foreground-booster::git+https://github.com/pixelcluster/kcgroups.git#commit=${_booster_commit}")
 sha256sums=('fc231c52a9a0b135870b73ce51849a64ea84f80eb8f921c0c0d85af8e12fde28'
@@ -45,11 +44,14 @@ build () {
 
 package_kcgroups() {
     depends=('qt6-base' 'kwindowsystem' 'kconfig' 'kdbusaddons')
+    provides=('kcgroups-dmemcg')
     cd "kcgroups-build"
     make DESTDIR="${pkgdir}" install
 }
 
 package_plasma-foreground-booster() {
+    provides=('plasma-foreground-booster-dmemcg')
+    depends=('kcgroups')
     cd "plasma-foreground-booster-build"
     make DESTDIR="${pkgdir}" install
 }
