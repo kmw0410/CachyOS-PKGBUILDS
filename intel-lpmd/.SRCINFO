@@ -1,7 +1,7 @@
 pkgbase = intel-lpmd
 	pkgdesc = Intel Low Power Mode Daemon
 	pkgver = 0.1.0
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/cachyos/intel-lpmd
 	arch = x86_64
 	license = GPL-2.0-or-later
@@ -16,7 +16,7 @@ pkgbase = intel-lpmd
 	depends = systemd-libs
 	depends = polkit
 	depends = upower
-	source = git+https://github.com/cachyos/intel-lpmd.git#commit=95f95597fe3f2dfd6fd3f33886cea2eb27104221
-	sha256sums = 204146e5eee9e9502b39698f88ab6588760be82f51269339dc4adee90107a934
+	source = git+https://github.com/cachyos/intel-lpmd.git#commit=f2e972f4620268c6a76bb4dbbe6d03fdf612fda6
+	sha256sums = 98d727f2ea3cb3b19f387e8ed8ac61903e3650356a85eb143baf5fd0e9decc60
 
 pkgname = intel-lpmd
