@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Copyright (C) 2022-2025 CachyOS team
+# Copyright (C) 2022-2026 CachyOS team
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -151,9 +151,9 @@ fi
 rate_repository_mirrors cachyos "${MIRRORS_DEFAULT_DIR}/cachyos-mirrorlist"
 
 # Always insert local mirrors as first due to blockings in RU region
-if [ "$country" = "RU" ]; then
-    force_ru_mirrors
-fi
+#if [ "$country" = "RU" ]; then
+#    force_ru_mirrors
+#fi
 
 install -m 0644 --backup=simple --suffix="-backup" "${MIRRORS_DEFAULT_DIR}/cachyos-mirrorlist" \
     "${MIRRORS_DEFAULT_DIR}/cachyos-v3-mirrorlist"

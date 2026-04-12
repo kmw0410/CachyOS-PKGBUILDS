@@ -2,7 +2,7 @@
 # Contributor: Michael Bolden Jnr SM9(); <me@sm9.dev>
 
 pkgname=cachyos-rate-mirrors
-pkgver=22
+pkgver=23
 pkgrel=1
 groups=(cachyos)
 arch=('any')
@@ -17,7 +17,7 @@ source=(
     cachyos-rate-mirrors.timer
     cachyos-rate-mirrors.hook
 )
-sha256sums=('c2e7c039cb36ec18c245ee4b7bc2e25f74c0a9107b23d5a5d34bb6c1e10eb6be'
+sha256sums=('c8eefdede7b115ee7f4a59d6f631e491a0698c3a930c2fc2d2e9e710b4feaad2'
             'a70233ee2e082e2e5a11503f048d06c80f566be4b7d664e4afee7051befc5420'
             '256966d791f94b9a8587cc314eef078277974ed2ff4b0c46b860d92b0d658366'
             '631cd984e0b77f58be2cee48748a49eab2c56d51622e397defbf464574aec0f4')
