@@ -3,7 +3,7 @@
 
 pkgname=chwd
 pkgver=1.20.2
-pkgrel=1
+pkgrel=2
 pkgdesc="CachyOS Hardware Detection Tool"
 arch=(x86_64)
 url="https://github.com/cachyos/chwd"
@@ -66,6 +66,7 @@ package() {
   cp -r ids/* "$pkgdir"/var/lib/chwd/ids
 
   cp -r profiles/pci "$pkgdir"/var/lib/chwd/db/
+  cp -r profiles/usb "$pkgdir"/var/lib/chwd/db/
 
   cd scripts/chwd-kernel
   install -Dm755 "target/release/chwd-kernel" "$pkgdir/usr/bin/chwd-kernel"
