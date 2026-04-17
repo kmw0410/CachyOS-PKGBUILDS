@@ -2,7 +2,7 @@
 # Contributor: Nikita Almakov <nikita.almakov@gmail.com>
 
 pkgname=rate-mirrors
-pkgver=0.28.2
+pkgver=0.28.3
 pkgrel=1
 pkgdesc="Everyday-use client-side map-aware mirror ranking tool"
 arch=(x86_64)
@@ -16,10 +16,9 @@ source=(
     https://github.com/CachyOS/rate-mirrors/commit/29d2f3beb572187d0ece1e81e78b4e5612b563b2.patch
     https://github.com/CachyOS/rate-mirrors/commit/c221115b27bf98285c84fc07caa00b72146e2ce8.patch
 )
-sha256sums=('08f810f61e22584ada9f49dd331317554b48a15016c8dc427c4dd425dc2f8692'
+sha256sums=('529dedced887e6c064eb449c187f69998427c5cbb19a549fbda6a954d1bf3af3'
             '10ffe2092e2f7bd19ad3e842d82734817276e3bca19344c778504b812c357b21'
-            '416a4fe6d0e49dcea0189a9e965328e4402827eec16038b9647983768a001eca'
-            'f941a1d5c930449174b3189608dffbc05b308725d035bd2eb6ad15a407080a98')
+            '416a4fe6d0e49dcea0189a9e965328e4402827eec16038b9647983768a001eca')
 
 prepare() {
   cd "$pkgname"
