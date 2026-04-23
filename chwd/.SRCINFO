@@ -1,7 +1,7 @@
 pkgbase = chwd
 	pkgdesc = CachyOS Hardware Detection Tool
-	pkgver = 1.20.2
-	pkgrel = 2
+	pkgver = 1.21.0
+	pkgrel = 1
 	url = https://github.com/cachyos/chwd
 	arch = x86_64
 	groups = cachyos
@@ -15,11 +15,13 @@ pkgbase = chwd
 	depends = pciutils
 	depends = lua
 	depends = pacman
+	depends = libusb
+	depends = libusb-1.0.so
 	provides = chwd-db
 	conflicts = chwd-db
 	replaces = chwd-db
-	source = chwd::git+https://github.com/cachyos/chwd.git#tag=1.20.2?signed
+	source = chwd::git+https://github.com/cachyos/chwd.git#tag=1.21.0?signed
 	validpgpkeys = B1B70BB1CD56047DEF31DE2EB62C3D10C54D5DA9
-	sha256sums = 42bcdc7c2ca2f258045504c7ebdf9476bd7cd833b4fa0c2ec4ee5ed343af32a5
+	sha256sums = 2c0e4d08691d7f2994769fd243cc6dfb83898408e647e9685b09f535be0b226c
 
 pkgname = chwd
