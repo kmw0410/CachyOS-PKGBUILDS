@@ -11,7 +11,7 @@ jobs:
       - name: Fix Git safe directory issue
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Install dependencies
-        run: pacman -Syu --noconfirm namcap bun-bin
+        run: pacman -Syu --noconfirm namcap bun
       - name: Validate PKGBUILDs
         run: bun .github/scripts/validate-pkgbuilds.js
         env:
