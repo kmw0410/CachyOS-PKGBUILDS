@@ -1,4 +1,4 @@
-pkgbase = cachyos-calamares-deckify
+pkgbase = cachyos-calamares-next-deckify
 	pkgdesc = Distribution-independent installer framework
 	pkgver = 3.4.1
 	pkgrel = 1
@@ -15,6 +15,7 @@ pkgbase = cachyos-calamares-deckify
 	makedepends = python-pyaml
 	makedepends = python-unidecode
 	makedepends = qt6-tools
+	depends = qt6-imageformats
 	depends = boost-libs
 	depends = ckbcomp
 	depends = cryptsetup
@@ -47,4 +48,4 @@ pkgbase = cachyos-calamares-deckify
 	source = calamares::git+https://github.com/CachyOS/cachyos-calamares.git#branch=cachyos-dev-deckify
 	sha256sums = SKIP
 
-pkgname = cachyos-calamares-deckify
+pkgname = cachyos-calamares-next-deckify
