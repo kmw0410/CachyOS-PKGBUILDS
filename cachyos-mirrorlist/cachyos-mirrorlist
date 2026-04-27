@@ -73,10 +73,7 @@ Server = https://mirror.keiminem.com/cachyos/repo/$arch/$repo
 Server = https://mirror2.keiminem.com/cachyos/repo/$arch/$repo
 ## Republic of Korea Mirror much thanks to Hemino
 Server = https://mirror.hemino.net/cachyos/repo/$arch/$repo
-## Republic of Korea Mirror much thanks to kmw
-Server = https://mirror.distly.kr/cachyos/repo/$arch/$repo
-## Repulbic of Korea Mirror mutch thanks to parkard
-Server = https://mirror.wane.kr/cachyos/repo/$arch/$repo
-## Republic of Korea Mirror much thanks to X from ROKFOSS
+## Republic of Korea Mirror much thanks to X and parkard from ROKFOSS
 Server = https://mirror.krfoss.org/cachyos/repo/$arch/$repo
+Server = https://mirror4.krfoss.org/cachyos/repo/$arch/$repo
 Server = https://mirrors.krfoss.org/cachyos/repo/$arch/$repo
